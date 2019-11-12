@@ -1,0 +1,36 @@
+
+
+<table class="table">
+        <tr>
+            <th scope="col">Course Id</th>
+            <th scope="col">Course Name</th>
+            <th scope="col">Course Duration</th>
+            <th scope="col">Course Start Date</th>
+            <th scope="col">Course End Date</th>
+            <th scope="col">Course Description</th>
+            <th scope="col">Action</th>
+
+
+        </tr>
+        <tr *ngFor="let course of courseList ">
+            <td>{{course.courseId}}</td>
+            <td>{{course.courseName}}</td>
+            <td>{{course.courseDuration}}</td>
+            <td>{{course.courseStartDate}}</td>
+            <td>{{course.courseEndDate}}</td>
+            <td>{{course.courseDescription}}</td>
+            <td>
+            <input type="button"
+            class="btn btn-default"
+            
+
+            value="deleteCourse(courser.courseId)">
+
+            <button class="btn btn-danger" (click)="editCourse(course)" style="margin-left: 20px;"> Edit</button>
+            </td>
+
+        </tr>
+      
+
+    </table>
+    <br><br>

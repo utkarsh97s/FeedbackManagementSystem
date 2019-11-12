@@ -1,0 +1,81 @@
+<style>
+h1 {
+  background-color: green;
+}
+
+/*fieldset {
+  background-color: lightblue;
+}*/
+fieldset {
+  background-image: linear-gradient(orange, yellow);
+}
+/*fieldset {
+  background-image: linear-gradient(orange,yellow,green); 
+}*/
+
+
+</style>
+<body>
+<form method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+
+<p>
+<label>Name
+<input type="text" name="customer_name" disabled value="Ram">
+</label> 
+</p>
+
+
+<div>
+<fieldset>
+<legend>Presentation and communication skills of faculty</legend>
+<p><label> <input type="radio" name="presentationSkill" required value=5> Excellent </label></p>
+<p><label> <input type="radio" name="presentationSkill" required value="Good"> Good </label></p>
+<p><label> <input type="radio" name="presentationSkill" required value="Average"> Average </label></p>
+<p><label> <input type="radio" name="presentationSkill" required value="BelowAverage"> Below Average </label></p>
+<p><label> <input type="radio" name="presentationSkill" required value="Poor"> Poor</label></p>
+</fieldset>
+</div>
+<fieldset>
+<legend>Ability to clarify doubts and explain difficult points</legend>
+<p><label> <input type="radio" name="doubtClarification" required value="Excellent"> Excellent </label></p>
+<p><label> <input type="radio" name="doubtClarification" required value="Good"> Good </label></p>
+<p><label> <input type="radio" name="doubtClarification" required value="Average"> Average </label></p>
+<p><label> <input type="radio" name="doubtClarification" required value="BelowAverage"> Below Average </label></p>
+<p><label> <input type="radio" name="doubtClarification" required value="Poor"> Poor</label></p>
+</fieldset>
+<fieldset>
+<legend>Time management in completing the contents </legend>
+<p><label> <input type="radio" name="timeManagement" required value="Excellent"> Excellent </label></p>
+<p><label> <input type="radio" name="timeManagement" required value="Good"> Good </label></p>
+<p><label> <input type="radio" name="timeManagement" required value="Average"> Average </label></p>
+<p><label> <input type="radio" name="timeManagement" required value="BelowAverage"> Below Average </label></p>
+<p><label> <input type="radio" name="timeManagement" required value="Poor"> Poor</label></p>
+</fieldset>
+<fieldset>
+<legend>Handout provided(Student Guide)</legend>
+<p><label> <input type="radio" name="handoutProvided" required value="Excellent"> Excellent </label></p>
+<p><label> <input type="radio" name="handoutProvided" required value="Good"> Good </label></p>
+<p><label> <input type="radio" name="handoutProvided" required value="Average"> Average </label></p>
+<p><label> <input type="radio" name="handoutProvided" required value="BelowAverage"> Below Average </label></p>
+<p><label> <input type="radio" name="handoutProvided" required value="Poor"> Poor</label></p>
+</fieldset>
+<fieldset>
+<legend>Hardware, software and network availability</legend>
+<p><label> <input type="radio" name="resourceAvailability" required value="Excellent"> Excellent </label></p>
+<p><label> <input type="radio" name="resourceAvailability" required value="Good"> Good </label></p>
+<p><label> <input type="radio" name="resourceAvailability" required value="Average"> Average </label></p>
+<p><label> <input type="radio" name="resourceAvailability" required value="BelowAverage"> Below Average </label></p>
+<p><label> <input type="radio" name="resourceAvailability" required value="Poor"> Poor</label></p>
+</fieldset>
+
+
+<p>
+<label>Special Instructions
+<textarea name="comments" maxlength="500"></textarea>
+</label>
+</p>
+
+<p><button>Submit Feedback</button></p>
+
+</form>
+</body>
